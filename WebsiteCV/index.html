@@ -1,105 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Daniel Alvarez Virtual Resume</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Daniel Alvarez's Resume</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700" rel="stylesheet">
 </head>
 <body>
-<!-- NAV BAR -->
-	<header>
-		<nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-            			<span class="sr-only">Toggle navigation</span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-            			<span class="icon-bar"></span>
-          			</button>
-          		</div>
-
-          		<div id="nav-container">
-          			<div id="collapsable-nav" class="collapse navbar-collapse">
-						<ul id="nav-list" class="nav navbar-nav">
-							<li>
-								<a href="#about">
-									<span class="glyphicon glyphicon-user"></span><br clear="hidden-xs">About
-								</a>
-							</li>
-							<li>
-								<a href="#Resume">
-									<span class="glyphicon glyphicon-list-alt"></span><br clear="hidden-xs">Resume
-								</a>
-							</li>
-							<li>
-								<a href="#academic-projects">
-									<span class="glyphicon glyphicon-blackboard"></span><br clear="hidden-xs">Projects
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="glyphicon glyphicon-earphone"></span><br clear="hidden-xs">Contact
-								</a>
-							</li>
-						</ul>
-					</div> <!-- collapsable-nav nav-list -->
-          		</div><!--nav container -->
-			</div> <!--container -->
-		</nav>
-	</header>
-
-<!-- MAIN CONTENT -->
-  	<div class="jumbotron">
+<!-- NAVBAR -->
+ 	<header>
+ 		<nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+ 			<div class="container-fluid">
+ 				<div class="navbar-header">
+     				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+       				 	<span class="sr-only">Toggle navigation</span>
+       					<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
+      				</button>
+     				<a class="navbar-brand" href="#Top"><p id="brand">Daniel Alvarez</p></a>
+   				</div> <!--navbar-header-->
+   				<div class="collapse navbar-collapse" id="navbar-collapse">
+   					<ul id="nav-list" class="nav navbar-nav">
+   						<li><a href="#about-section"><span class="glyphicon glyphicon-user"></span><br>About</a></li>
+   						<li><a href="#resume-section"><span class="glyphicon glyphicon-list-alt"></span><br>Resume</a></li>
+   						<li><a href="#aptitudes-section"><span class="glyphicon glyphicon-briefcase"></span><br>Aptitudes</a></li>
+   						<li><a href="#"><span class="glyphicon glyphicon-earphone"></span><br>Contact</a></li>
+   					</ul>
+   				</div><!--.navbar-collapse-->
+ 			</div><!--container-fluid-->
+ 		</nav>
+ 	</header>
+ <!--JUMBOTRON-->
+ 	<div class="jumbotron">
   		<div class="container">
   		</div>
-  	</div>
-<!-- ABOUT SECTION -->
-  	<section id="about">
-  		<h4 id="title-about">ABOUT</h4>
-  		<div id="about-text">
-  			<p>
-  				Born in Mexico City, Daniel Alvarez is an engineer in mechatronics. He has experience in lean manufacturing in the automotive industry and product design in the biomechanical area. He is passionate about manufacturing and continuous improvment where applying new and innovative ideas can have an impact in the cycle time of the process and a reduction in expenses.
-  			</p>
-  		</div>
-  		<div id="icon-resume">
-        <ul><center>
-          <li>
-            <a href="CV/Daniel_Alvarez_CV_English.pdf" target="_blank">
-              <img src="images/icon_pdf.png" alt="icon of resume in pdf format"><p>Download PDF</p>
-            </a>
-          </li>
-          <li>
-            <a href="https://mx.linkedin.com/in/daniel-alvarez-7042b6105" target="_blank">
-              <img src="images/icon_linkedin.png" alt="icon to send to linkedIn page"><p>Linked In</p>
-            </a>
-          </li></center>
-        </ul>
-      </div>
-  	</section>
-<!-- RESUME SECTION -->
-  	<section id="Resume">
-       <div class="row">
-        <div class="col-md-4 titles">Education
-        </div>
-        <div id="education" class="col-md-4">
-          <div class="education_school">
-            <p class="bachelor_name">Bachelor of Engineering in Mechatronics</p><br><p class="uni_name">Instituto Tecnológico y de Estudios Superiores de Monterrey, Mexico</p>
-          </div>
-          <div class="education_school">
-            <p class="bachelor_name">Study Abroad</p><br><p class="uni_name">Furtwangen Hochschule, Germany</p>
-          </div>
-        </div>
-        <div class="col-md-4">.col-md-4
-        </div>
-      </div>
-  		<div id="work-experience"></div>
-  		<div id="academic-projects"></div>
-  		<div id="why-me"></div>
-  	</section>
+	</div>
+<!--ABOUT SECTION-->
+	<section id="about-section">
+		<div class="row">
+			<div class="col-md-4 about-gen"><h4 id="title-about">About</h4></div>
+			<div class="col-md-4 about-gen"><p id="text-about">Born in Mexico City, Daniel Alvarez is an engineer in mechatronics. He has experience in lean manufacturing in the automotive industry and product design in the biomechanical area. He is passionate about manufacturing and continuous improvment where applying new and innovative ideas can have an impact in the cycle time of the process and a reduction in expenses.</p>
+			</div>
+			<div id="about-links" class="col-md-4 about-gen">
+				<a href="CV/Daniel_Alvarez_CV.pdf" target="_blank"><img class="icon_about" src="images/icon_pdf.png"><p class="gen-icon-about">Download PDF</p></a><br>
+				<a href="https://mx.linkedin.com/in/daniel-alvarez-7042b6105" target="_blank"><img class="icon_about" src="images/icon_linkedin.png"><p class="gen-icon-about">Linked In</p></a>
+			</div>
+		</div><!--Grid 4-4-4-->
+	</section><!--end about-section-->
+<!--RESUME SECTION-->
+	<section id="resume-section">
+		<div class="row">
+			<div id="title-resume" class="col-md-4 uni">
+				Education
+			</div>
+			<div id="uni-gen" class="col-md-4 uni">
+				<div class="uni1"><p class="bach-resume">Bachelor of Engineering in Mechatronics</p><br><p class="uni-resume">Instituto Tecnológico y de Estudios Superiores de Monterrey</p>
+				</div>
+				<div class="uni2"><p class="bach-resume">Study Abroad
+				</p><br><p class="uni-resume">Hochschule Furtwangen</p>
+				</div>
+			</div>
+			<div class="col-md-4 uni">
+				<div class="location-resume">2011 - 2016<br>Monterrey, Mexico</div>
+				<div>2014 - 2015<br>Villingen-Schwenningen, Germany</div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="title-resume" class="col-md-4 titles uni">
+				Work Experience
+			</div>
+			<div class="col-md-4 uni">
+				<div class="uni1"><p class="bach-resume">Hardware Engineer</p><br><p class="uni-resume">Indi</p><p class="text-uni">As Hardware Engineer I was in charge of the CAD/CAM design of an <a href="https://www.youtube.com/watch?v=aQwK8nPzfUw" target="_blank">exoesqueleton</a>, and the creation of the prototypes for testing.</p>
+				</div>
+				<div class="uni1"><p class="bach-resume">Intern Lean Engineer
+				</p><br><p class="uni-resume">Nemak</p><p class="text-uni">As an intern Lean Engineer in the Melting Center I was part of a team that developed an <a href="images/andon.jpg" target="_blank">Andon system</a>, which was capable of monitoring the state of the machines in real time, calculate the productivity and alert the corresponding department when an anomaly occurs.</p>
+				</div>	
+				<div class="uni1">
+					<p class="bach-resume">Intern Lean Engineer
+					</p><br><p class="uni-resume">Nemak</p><p class="text-uni">As an intern Lean Engineer in the Product Development Center I was in charge in obtaining the performance of the products currently in production to determine the stability and to implement a continuous improvement plan.</p>
+				</div>
+				<div class="uni1">
+					<p class="bach-resume">Project Collaborator
+					</p><br><p class="uni-resume">Ditem</p><p class="text-uni">I was part of a team that simulated a manufacturing cage by using Siemens NX Process Simulation, this project consisted in simulating the movements of the manufacturing cage to ensure the proper location and movements of the machines and robotic arms.</p>
+				</div>	
+				<div class="uni2">
+					<p class="bach-resume">Project Collaborator
+					</p><br><p class="uni-resume">Ditem</p><p class="text-uni">I was part of a team that designed and created a <a href="images/generador.jpg" target="_blank">Hidrogen Generator</a>, the purpose of this proyect was to create a product to be assembled by a Motoman robotic arm, I was in charge of the design CAD/CAM of the hidrogen generator and the programming of the robotic arm.</p>
+				</div>
+			</div>
+			<div class="col-md-4 uni">
+				<div class="location-resume">Jan 2016 - May 2016<br>Monterrey, Mexico</div>
+				<div class="location-resume">May 2016 - July 2016<br>García, Mexico</div>
+				<div class="location-resume">Aug 2016 - Dec 2016<br>García, Mexico</div>
+				<div class="location-resume">Sept 2015 - Dec 2015<br>Monterrey, Mexico</div>
+				<div class="location-resume">Aug 2016 - Dec 2016<br>Monterrey, Mexico</div>
+			</div>
+		</div>
+
+	</section>
+<!--APTITUDES SECTION-->
+	<section id="aptitudes-section">
+		
+	</section>
 </body>
 </html>
