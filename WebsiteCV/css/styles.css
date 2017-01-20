@@ -1,0 +1,123 @@
+body {
+	font-size: 14px;
+	background-color: #ffffff;
+	font-family: 'PT Sans', sans-serif;
+}
+
+h4 {
+	margin-left: 20%
+}
+
+/* HEADER */
+.container {
+	width: 100%;
+	padding: 0px;
+}
+#header-nav {
+	background-color: #000000;
+  	border-radius: 0;
+  	border: 0;
+}
+#nav-container {
+	width: 330px;
+	margin: 0px auto;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #ff0000;
+}
+#nav-list a span {
+  font-size: 1.2em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #b3b3b3;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* HOME */
+@media (min-width:780px) {
+	.jumbotron {
+		margin: 50px 0px 0px 0px;
+		padding: 0px;
+		background-image: url(../images/jumbotron_1500.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 553px
+	}
+}
+@media (max-width: 779px){
+	.jumbotron {
+		margin: 50px 0px 0px 0px;
+		padding: 0px;
+		background-image: url(../images/jumbotron_780.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 300px
+	}
+}
+
+#about {
+	background-color: #333333;
+	color: #ffffff;
+}
+#title-about{
+	color: #8c8c8c;
+	font-weight: bold;
+	float: left;
+	margin-top: 50px;
+	height: 20px;
+}
+#about-text {
+	display: inline-block;
+	margin: 50px 0px 30px 150px;
+	padding: 0px;
+	border: 0px;
+	line-height: 2;
+	width: 40%;
+}
+#icon-resume li {
+	display: inline-block;
+}
+#icon-resume a {
+	margin-right: 100px;
+	color: #999999;
+	text-decoration: none;
+}
+#icon-resume a:hover {
+	color: #ffffff
+}
+#education {
+	margin-top:50px;
+}
+.education_school {
+	height: 70px;
+	margin-bottom: 20px;
+}
+.education_school p {
+	line-height: 0.1;
+}
+.bachelor_name {
+	font-weight: bold;
+	color: #e65c00;
+}
+.uni_name {
+	font-style: italic;
+	color: #000000;
+}
+.titles {
+	font-weight: bold;
+	font-size: 1.4em;
+	text-align: right;
+	margin-top: 40px;
+	padding-right: 8%;
+}
