@@ -1,6 +1,8 @@
 body {
 	font-size: 14px;
+	word-spacing: 4px;
 	background-color: #ffffff;
+	font-family: 'PT Sans', sans-serif;
 }
 /*ABOUT SECTION*/
 #about-section {
@@ -119,6 +121,15 @@ body {
 	}
 	#header-nav {
 		height: 80px;
+	}
+	#nav-list {
+		background-color:black;
+	}
+	 #nav-list a {
+ 	font-size: 0.8em;
+	}
+	#nav-list {
+		width: 100%;
 	}
 	/*about section*/
 	#title-about {
