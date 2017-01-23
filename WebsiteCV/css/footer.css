@@ -1,0 +1,13 @@
+#contact-section {
+	background-color: black;
+}
+#telephone {
+	display: inline;
+	color: white;
+	padding-left: 35%;
+}
+#email {
+	display: inline;
+	color: white;
+	padding-left: 50px;
+}

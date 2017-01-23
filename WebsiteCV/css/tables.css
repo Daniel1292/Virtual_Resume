@@ -1,10 +1,15 @@
 /****RESUME SECTION***/
 /*EDUCATION*/
+#resume-section th, td {
+	padding: 15px;
+}
 .Title-table {
 	text-align: right;
 	vertical-align: top;
 	width: 30%;
 	padding-right:30px;
+}
+.title {
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -24,9 +29,71 @@
 .subtitle2-table {
 	font-style: italic;
 }
-th, td {
-    padding: 15px;
-}
 /*WORK EXPERIENCE*/
 
 /*WHY ME*/
+#why-me-section {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+#why-me {
+	display: inline-block;
+	padding-left: 60px;
+	border:0;
+}
+#why-me td, th {
+	padding-left: 20px;
+	padding-right: 20px;
+	vertical-align: top;
+}
+#why-me td {
+	padding-bottom: 20px;
+	color: grey;
+}
+#why-me td:hover {
+	color: white;
+}
+#why-me th {
+	padding-top: 20px;
+}
+#why-me tr {
+	color: white;
+	background-color: black;
+}
+#title {
+	display: inline-block;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 738px) {
+	.Title-table {
+		padding-right:0px;
+		font-size: 5vw;
+	}
+	.col2 {
+	width: 50%;
+	padding-left: 10px;
+	}
+	.col3 {
+	padding-left: 10px;
+	font-size: 2vw;
+	}
+	.subtitle1-table {
+		font-size: 4vw;
+	}
+	#why-me {
+	padding-left: 0px;
+	}
+	#title {
+		padding-left: 15px;
+		text-align: left;
+		font-size: 5vw;
+	}
+	#why-me th, td {
+	font-size: 2vw;
+	line-height: 1.1;
+	padding-left: 10px;
+	padding-right: 0px;
+	}
+}
