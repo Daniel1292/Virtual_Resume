@@ -3,11 +3,24 @@
 }
 #telephone {
 	display: inline;
-	color: white;
 	padding-left: 35%;
 }
 #email {
 	display: inline;
-	color: white;
 	padding-left: 50px;
+}
+#contact-section a {
+	text-decoration:none;
+	color:white;
+}
+@media (max-width: 738px) {
+	#telephone {
+	display: inline;
+	color: white;
+	padding-left: 10%;
+	}
+	#email {
+	display: inline;
+	padding-left: 25px;
+	}
 }
