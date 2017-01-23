@@ -4,9 +4,11 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Daniel Alvarez's Resume</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+	  <title>Daniel Alvarez's Resume</title>
+	  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/tables.css">
 </head>
 <body>
 <!-- NAVBAR -->
@@ -14,15 +16,16 @@
  		<nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
  			<div class="container-fluid">
  				<div class="navbar-header">
-     				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-nav" aria-expanded="false">
+     				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
        				 	<span class="sr-only">Toggle navigation</span>
        					<span class="icon-bar"></span>
+        				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
       				</button>
      				<a class="navbar-brand" href="#Top"><p id="brand">Daniel Alvarez</p></a>
    				</div> <!--navbar-header-->
-   				<div id="collapse-nav" class="collapse navbar-collapse">
+   				<div class="collapse navbar-collapse" id="navbar-collapse">
    					<ul id="nav-list" class="nav navbar-nav">
    						<li><a href="#about-section"><span class="glyphicon glyphicon-user"></span><br>About</a></li>
    						<li><a href="#resume-section"><span class="glyphicon glyphicon-list-alt"></span><br>Resume</a></li>
@@ -52,61 +55,55 @@
 	</section><!--end about-section-->
 <!--RESUME SECTION-->
 	<section id="resume-section">
-		<div class="row">
-			<div id="title-resume" class="col-md-4 uni">
-				Education
-			</div>
-			<div id="uni-gen" class="col-md-4 uni">
-				<div class="uni1"><p class="bach-resume">Bachelor of Engineering in Mechatronics</p><br><p class="uni-resume">Instituto Tecnológico y de Estudios Superiores de Monterrey</p>
-				</div>
-				<div class="uni2"><p class="bach-resume">Study Abroad
-				</p><br><p class="uni-resume">Hochschule Furtwangen</p>
-				</div>
-			</div>
-			<div class="col-md-4 uni">
-				<div class="location-resume">2011 - 2016<br>Monterrey, Mexico</div>
-				<div>2014 - 2015<br>Villingen-Schwenningen, Germany</div>
-			</div>
-		</div>
-		<div class="row">
-			<div id="title-resume" class="col-md-4 titles uni">
-				Work Experience
-			</div>
-			<div class="col-md-4 uni">
-				<div class="uni1"><p class="bach-resume">Hardware Engineer</p><br><p class="uni-resume">Indi</p><p class="text-uni">As Hardware Engineer I was in charge of the CAD/CAM design of an <a href="https://www.youtube.com/watch?v=aQwK8nPzfUw" target="_blank">exoesqueleton</a>, and the creation of the prototypes for testing.</p>
-				</div>
-				<div class="uni1"><p class="bach-resume">Intern Lean Engineer
-				</p><br><p class="uni-resume">Nemak</p><p class="text-uni">As an intern Lean Engineer in the Melting Center I was part of a team that developed an <a href="images/andon.jpg" target="_blank">Andon system</a>, which was capable of monitoring the state of the machines in real time, calculate the productivity and alert the corresponding department when an anomaly occurs.</p>
-				</div>	
-				<div class="uni1">
-					<p class="bach-resume">Intern Lean Engineer
-					</p><br><p class="uni-resume">Nemak</p><p class="text-uni">As an intern Lean Engineer in the Product Development Center I was in charge in obtaining the performance of the products currently in production to determine the stability and to implement a continuous improvement plan.</p>
-				</div>
-				<div class="uni1">
-					<p class="bach-resume">Project Collaborator
-					</p><br><p class="uni-resume">Ditem</p><p class="text-uni">I was part of a team that simulated a manufacturing cage by using Siemens NX Process Simulation, this project consisted in simulating the movements of the manufacturing cage to ensure the proper location and movements of the machines and robotic arms.</p>
-				</div>	
-				<div class="uni2">
-					<p class="bach-resume">Project Collaborator
-					</p><br><p class="uni-resume">Ditem</p><p class="text-uni">I was part of a team that designed and created a <a href="images/generador.jpg" target="_blank">Hidrogen Generator</a>, the purpose of this proyect was to create a product to be assembled by a Motoman robotic arm, I was in charge of the design CAD/CAM of the hidrogen generator and the programming of the robotic arm.</p>
-				</div>
-			</div>
-			<div class="col-md-4 uni">
-				<div class="location-resume">Jan 2016 - May 2016<br>Monterrey, Mexico</div>
-				<div class="location-resume">May 2016 - July 2016<br>García, Mexico</div>
-				<div class="location-resume">Aug 2016 - Dec 2016<br>García, Mexico</div>
-				<div class="location-resume">Sept 2015 - Dec 2015<br>Monterrey, Mexico</div>
-				<div class="location-resume">Aug 2016 - Dec 2016<br>Monterrey, Mexico</div>
-			</div>
-		</div>
+    <table style="width: 100%">
+      <tr>
+        <th class="Title-table"><h4>Education</h3></th>
+        <td class="col2"><h4 class="subtitle1-table">Bachelor of Engineering in Mechatronics</h4><p class="subtitle2-table">Instituto Tecnológico y de Estudios Superiores de Monterrey</p></td>
+        <td class="col3">2011 - 2016<br>Monterrey, Mexico</td>
+      </tr>
+      <tr>
+        <th></th>
+        <td class="col2"><h4 class="subtitle1-table">Study Abroad</h4><p class="subtitle2-table">Hochschule Furtwangen</p></td>
+        <td class="col3">2014 - 2015<br>Villingen-Schwenningen, Germany</td>
+      </tr>
+    </table>
+
+    <table style="width: 100%">
+      <tr>
+        <th class="Title-table"><h4>Work Experience</h3></th>
+        <td class="col2"><h4 class="subtitle1-table">Hardware Engineer</h4><p class="subtitle2-table">INDI</p><p>As Hardware Engineer I was in charge of the CAD/CAM design of an <a href="https://www.youtube.com/watch?v=aQwK8nPzfUw" target="_blank">exoesqueleton</a>, and the creation of the prototypes for testing.</p></td>
+        <td class="col3">Jan 2016- May 2016<br>Monterrey, Mexico</td>
+      </tr>
+      <tr>
+        <th></th>
+        <td class="col2"><h4 class="subtitle1-table">Intern Lean Engineer, Melting Center</h4><p class="subtitle2-table">NEMAK</p><p>As an intern Lean Engineer in the Melting Center I was part of a team that developed an <a href="images/andon.jpg" target="_blank">Andon system</a>, which was capable of monitoring the state of the machines in real time, calculate the productivity and alert the corresponding department when an anomaly occurs.</p></td>
+        <td class="col3">May 2016 - July 2016<br>García, Mexico</td>
+      </tr>
+      <tr>
+         <th></th>
+        <td class="col2"><h4 class="subtitle1-table">Intern Lean Engineer, Product Development Center</h4><p class="subtitle2-table">NEMAK</p><p>As an intern Lean Engineer in the Product Development Center I was in charge in obtaining the performance of the products currently in production to determine the stability and to implement a continuous improvement plan.</p></td>
+        <td class="col3">May 2016 - July 2016<br>García, Mexico</td>
+      </tr>
+      <tr>
+         <th></th>
+        <td class="col2"><h4 class="subtitle1-table">Project Collaborator</h4><p class="subtitle2-table">DITEM</p><p>I was part of a team that simulated a manufacturing cage by using Siemens NX Process Simulation, this project consisted in simulating the movements of the manufacturing cage to ensure the proper location and movements of the machines and robotic arms.</p></td>
+        <td class="col3">Sep 2015 - Dec 2015<br>Monterrey, Mexico</td>
+      </tr>
+      <tr>
+         <th></th>
+        <td class="col2"><h4 class="subtitle1-table">Project Collaborator</h4><p class="subtitle2-table">DITEM</p><p>I was part of a team that designed and created a <a href="images/generador.jpg" target="_blank">Hidrogen Generator</a>, the purpose of this proyect was to create a product to be assembled by a Motoman robotic arm, I was in charge of the design CAD/CAM of the hidrogen generator and the programming of the robotic arm.</p></td>
+        <td class="col3">Aug 2016 - Dec 2016<br>Monterrey, Mexico</td>
+      </tr>
+    </table>
 
 	</section>
 <!--APTITUDES SECTION-->
 	<section id="aptitudes-section">
 		
 	</section>
-	<script src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
