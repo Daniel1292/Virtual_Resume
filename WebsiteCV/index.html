@@ -1,141 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>Daniel Alvarez's Resume</title>
-	  <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/tables.css">
-	<link rel="stylesheet" href="css/footer.css">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+	<title>Daniel Alvarez's Resume</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/tables.css">
 </head>
 <body>
 <!-- NAVBAR -->
- 	<header>
- 		<nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
- 			<div class="container-fluid">
- 				<div class="navbar-header">
-     				 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-       				 	<span class="sr-only">Toggle navigation</span>
-       					<span class="icon-bar"></span>
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top headernav">
+  			<div class="container-fluid">
+    		<!-- Brand and toggle get grouped for better mobile display -->
+    			<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-navbar" aria-expanded="false">
+        				<span class="sr-only">Toggle navigation</span>
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
       				</button>
-     				<a class="navbar-brand" href="#Top"><p id="brand">Daniel Alvarez</p></a>
-   				</div> <!--navbar-header-->
-   				<div class="collapse navbar-collapse" id="navbar-collapse">
-   					<ul id="nav-list" class="nav navbar-nav">
-   						<li><a href="#about-section"><span class="glyphicon glyphicon-user"></span><br>About</a></li>
+      				<a id="brand" class="navbar-brand" href="#Top">Daniel Alvarez</a>
+    			</div><!--.navbar-header-->
+				<div class="collapse navbar-collapse" id="collapse-navbar">
+      				<ul id="nav-list" class="nav navbar-nav">
+      					<li><a href="#about-section"><span class="glyphicon glyphicon-user"></span><br>About</a></li>
+      					<li><a href="#skills-section"><span class="glyphicon glyphicon-briefcase"></span><br>Skills</a></li>
    						<li><a href="#resume-section"><span class="glyphicon glyphicon-list-alt"></span><br>Resume</a></li>
-   						<li><a href="#aptitudes-section"><span class="glyphicon glyphicon-briefcase"></span><br>Aptitudes</a></li>
    						<li><a href="#contact-section"><span class="glyphicon glyphicon-earphone"></span><br>Contact</a></li>
-   					</ul>
-   				</div><!--.navbar-collapse-->
- 			</div><!--container-fluid-->
- 		</nav>
- 	</header>
- <!--JUMBOTRON-->
- 	<div class="jumbotron" style="width: 100%">
-  		<div class="container">
-  		</div>
+      				</ul>
+      			</div><!-- #collapsabe-navbar -->
+      		</div><!--container-fluid-->
+		</nav>
+	</header>
+<!-- JUMBOTRON -->
+	 <div class="jumbotron">
+  		<div class="container-fluid" style="width: 100%"></div>
 	</div>
-<!--ABOUT SECTION-->
+<!-- ABOUT SECTION -->	
 	<section id="about-section">
 		<div class="row" style="width: 100%">
-			<div class="col-md-4 about-gen"><h4 id="title-about">About</h4></div>
-			<div class="col-md-4 about-gen"><p id="text-about">Born in Mexico City, Daniel Alvarez is an engineer in mechatronics. He has experience in lean manufacturing in the automotive industry and product design in the biomechanical area. He is passionate about manufacturing and continuous improvment where applying new and innovative ideas can have an impact in the cycle time of the process and a reduction in expenses.</p>
+			<div class="col-lg-2"><h4>About</h4></div>
+			<div class="col-lg-6"><p>Born in Mexico City, Daniel Alvarez is an engineer in mechatronics. He has experience in lean manufacturing in the automotive industry and product design in the biomechanical area. He is passionate about manufacturing and continuous improvment where applying new and innovative ideas can have an impact in the cycle time of the process and a reduction in expenses.</p></div>
+			<div class="col-lg-4"><a href="CV/Daniel_Alvarez_CV.pdf" target="_blank"><img src="images/icon_pdf.png">Download PDF</a><br>
+				<a href="https://mx.linkedin.com/in/daniel-alvarez-7042b6105" target="_blank"><img src="images/icon_linkedin.png">Linked In</a></div>
+		</div><!-- .row -->
+	</section><!--#about-section-->
+<!--SKILLS SECTION -->
+	<section id="skills-section" style="display: none;">
+		<nav class="navbar navbar-default">
+			<div id="skills-list" class="container-fluid" style="width: 100%">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Program Handling </a></li>
+					<li><a href="#">Programming Languages</a></li>
+					<li><a href="#">Languages</a></li>
+					<li><a href="#">Professional Skills</a></li>		
+					<li><a href="#">Personal Skills</a></li>
+				</ul>
 			</div>
-			<div id="about-links" class="col-md-4 about-gen">
-				<a href="CV/Daniel_Alvarez_CV.pdf" target="_blank"><img class="icon_about" src="images/icon_pdf.png"><p class="gen-icon-about">Download PDF</p></a><br>
-				<a href="https://mx.linkedin.com/in/daniel-alvarez-7042b6105" target="_blank"><img class="icon_about" src="images/icon_linkedin.png"><p class="gen-icon-about">Linked In</p></a>
-			</div>
-		</div><!--Grid 4-4-4-->
-	</section><!--end about-section-->
-<!--RESUME SECTION-->
-	<section id="resume-section">
-    <table style="width: 100%">
-      <tr>
-        <th class="Title-table"><h4 class="title">Education</h4></th>
-        <td class="col2"><h4 class="subtitle1-table">Bachelor of Engineering in Mechatronics</h4><p class="subtitle2-table">Instituto Tecnológico y de Estudios Superiores de Monterrey</p></td>
-        <td class="col3">2011 - 2016<br>Monterrey, Mexico</td>
-      </tr>
-      <tr>
-        <th></th>
-        <td class="col2"><h4 class="subtitle1-table">Study Abroad</h4><p class="subtitle2-table">Hochschule Furtwangen</p></td>
-        <td class="col3">2014 - 2015<br>Villingen-Schwenningen, Germany</td>
-      </tr>
-    </table>
-
-    <table style="width: 100%">
-      <tr>
-        <th class="Title-table"><h4 class="title">Work Experience</h4></th>
-        <td class="col2"><h4 class="subtitle1-table">Hardware Engineer</h4><p class="subtitle2-table">INDI</p><p>As Hardware Engineer I was in charge of the CAD/CAM design of an <a href="https://www.youtube.com/watch?v=aQwK8nPzfUw" target="_blank">exoesqueleton</a>, and the creation of the prototypes for testing.</p></td>
-        <td class="col3">Jan 2016- May 2016<br>Monterrey, Mexico</td>
-      </tr>
-      <tr>
-        <th></th>
-        <td class="col2"><h4 class="subtitle1-table">Intern Lean Engineer, Melting Center</h4><p class="subtitle2-table">NEMAK</p><p>As an intern Lean Engineer in the Melting Center I was part of a team that developed an <a href="images/andon.jpg" target="_blank">Andon system</a>, which was capable of monitoring the state of the machines in real time, calculate the productivity and alert the corresponding department when an anomaly occurs.</p></td>
-        <td class="col3">May 2016 - July 2016<br>García, Mexico</td>
-      </tr>
-      <tr>
-         <th></th>
-        <td class="col2"><h4 class="subtitle1-table">Intern Lean Engineer, Product Development Center</h4><p class="subtitle2-table">NEMAK</p><p>As an intern Lean Engineer in the Product Development Center I was in charge in obtaining the performance of the products currently in production to determine the stability and to implement a continuous improvement plan.</p></td>
-        <td class="col3">Aug 2016 - Dec 2016<br>García, Mexico</td>
-      </tr>
-      <tr>
-         <th></th>
-        <td class="col2"><h4 class="subtitle1-table">Project Collaborator</h4><p class="subtitle2-table">DITEM</p><p>I was part of a team that simulated a manufacturing cage by using Siemens NX Process Simulation, this project consisted in simulating the movements of the manufacturing cage to ensure the proper location and movements of the machines and robotic arms.</p></td>
-        <td class="col3">Sep 2015 - Dec 2015<br>Monterrey, Mexico</td>
-      </tr>
-      <tr>
-         <th></th>
-        <td class="col2"><h4 class="subtitle1-table">Project Collaborator</h4><p class="subtitle2-table">DITEM</p><p>I was part of a team that designed and created a <a href="images/generador.jpg" target="_blank">Hidrogen Generator</a>, the purpose of this proyect was to create a product to be assembled by a Motoman robotic arm, I was in charge of the design CAD/CAM of the hidrogen generator and the programming of the robotic arm.</p></td>
-        <td class="col3">Aug 2016 - Dec 2016<br>Monterrey, Mexico</td>
-      </tr>
-    </table>
+		</nav>
+		<div id="ph">
+			<ul>
+				<li>Microsoft Word</li>
+				<li>Microsoft Powerpoint</li>
+				<li>Microsoft Excel</li>
+				<li>Microsof Project</li>
+				<li>Solidworks</li>
+				<li>Siemens Nx</li>
+				<li>AutoCAD</li>
+				<li>Proteus</li>
+				<li>LabView</li>
+			</ul>
+		</div>
+		<div id="pl">
+			<ul>
+				<li>Python</li>
+				<li>Java</li>
+				<li>Javascript</li>
+				<li>C</li>
+				<li>C++</li>
+				<li>VBA</li>
+				<li>PLC programming</li>
+			</ul>
+		</div>
+		<div id="l">
+			<ul>
+				<li>Spanish</li>
+				<li>English (TOEFL 650 pts)</li>
+				<li>German (B1 Certificate)</li>
+				<li>French</li>
+			</ul>
+		</div>
+		<div id="Prs">
+			<ul>
+				<li>Lean Manufacturing</li>
+				<li>Six sigma</li>
+				<li>Kaizen</li>
+				<li>Robot programming (ABB, Motoman, Kuka)</li>
+				<li>Automation design</li>
+			</ul>
+		</div>
+		<div id="Pes">
+			<ul>
+				<li>Able to adapt easily to different situations and environment</li>
+				<li>Organized</li>
+				<li>Proactiv</li>
+				<li>Outgoing</li>
+				<li>Ease to learn different languages and topics</li>
+			</ul>
+		</div>
 	</section>
-<!--APTITUDES SECTION-->
-	<section id="aptitudes-section">
+<!-- RESUME SECTION -->
+	<section id="resume-section">
+		<table style="width: 100%">
+			<tr>
+				<th class="title-table" style="width: 16.66%"><h4>Education</h4></th>
+				<td style="width: 50%"><h4 class="subtitle-resume">Bachelor of Engineering in Mechatronics</h4><p class="subtitle2-resume">Instituto Tecnológico y de Estudios Superiores de Monterrey</p></td>
+				<td class="date-table" style="width: 33.34%">Aug 2011-Dec 2016<br>Monterrey,Mexico</td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><h4 class="subtitle-resume">Study Abroad</h4><p class="subtitle2-resume">Hochschule Furtwangen</p></td>
+				<td class="date-table" >Oct 2014-Aug 2015<br>Villingen-Schwenningen, Germany</td>
+			</tr>
+			<tr>
+				<th class="title-table"><h4>Work Experience</h4></th>
+				<td><h4 class="subtitle-resume">Hardware Engineer</h4><p class="subtitle2-resume">Indi</p><p>As Hardware Engineer I was in charge of the CAD/CAM design of an <a href="https://www.youtube.com/watch?v=aQwK8nPzfUw" target="_blank">exoesqueleton</a>, and the creation of the prototypes for testing.</p></td>
+				<td class="date-table" >Jan 2016-May 2016<br>Monterrey,Mexico</td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><h4 class="subtitle-resume">Intern Lean Engineer, Melting Center</h4><p class="subtitle2-resume">Nemak</p><p>As an intern Lean Engineer in the Melting Center I was part of a team that developed an <a href="images/andon.jpg" target="_blank">Andon system</a>, which was capable of monitoring the state of the machines in real time, calculate the productivity and alert the corresponding department when an anomaly occurs.</p></td>
+				<td class="date-table" >May 2016-July 2016<br>García, Mexico</td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><h4 class="subtitle-resume">Intern Lean Engineer, Product Development Center</h4><p class="subtitle2-resume">Nemak</p><p>As an intern Lean Engineer in the Product Development Center I was in charge in obtaining the performance of the products currently in production to determine the stability and to implement a continuous improvement plan.</p></td>
+				<td class="date-table" >May 2016-July 2016<br>García, Mexico</td>
+			</tr>
+			<tr>
+				<th class="title-table"><h4>Academic Projects</h4></th>
+				<td><h4 class="subtitle-resume">Project Collaborator with a company</h4><p class="subtitle2-resume">DITEM</p><p>I was part of a team that simulated a manufacturing cage by using Siemens NX Process Simulation, this project consisted in simulating the movements of the manufacturing cage to ensure the proper location and movements of the machines and robotic arms.</p></td>
+				<td class="date-table" >Sept 2015<br>Monterrey,Mexico</td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><h4 class="subtitle-resume">Project Collaborator with a company</h4><p class="subtitle2-resume">DITEM</p><p>I was part of a team that designed and created a <a href="images/generador.jpg" target="_blank">Hidrogen Generator</a>, the purpose of this proyect was to create a product to be assembled by a Motoman robotic arm, I was in charge of the design CAD/CAM of the hidrogen generator and the programming of the robotic arm.</p></td>
+				<td class="date-table" >Aug 2016-Dec 2016<br>Monterrey,Mexico</td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><h4 class="subtitle-resume">Project: CNC machine</h4><p class="subtitle2-resume">Course: Mechatronics Lab</p><p>During this laboratory, I and my team were developing and constructing a cnc machine capable of engraving and cutting different soft materials as: plastic, wood and foam.</p></td>
+				<td class="date-table" >Aug 2016-Dec 2016<br>Monterrey,Mexico</td>
+			</tr>
+			<tr>
+				<th></th>
+				<td><h4 class="subtitle-resume">Project: Visual recognition using a Parrot-drone</h4><p class="subtitle2-resume">Course: Vision for robots </p><p>During this class we learned different methods of visual recognition using a camera, and we elaborated a program for a drone to recognize different shapes and perform a rutin based on the type of shapes and orientation.</p></td>
+				<td class="date-table" >Jan 2016-May 2016<br>Monterrey,Mexico</td>
+			</tr>
+		</table><!--END RESUME-->
+		<!--WHY ME-->
+		<div class="row" style="width: 100%">
+			<div class="col-lg-2 title-table"><h4>Why Me?</h4></div>
+			<div class="col-lg-10">
+				<table id="why-me" style="width: 80%">
+					<tr>
+						<th width="33.33%">Vision</th>
+						<th width="33.33%">Problem-solver</th>
+						<th width="33.33%">Strategic</th>
+					</tr>
+					<tr>
+          				<td>I see manufacturing as my passion and by developing new concepts and technology it is possible to monitor and anticipate any potential failure.</td>
+          				<td>I believe that everything has a solution, with the correct methodology of simplifying the problem to its core aspect, and solving piece by piece.</td>
+          				<td>I think like a business owner and identify opportunities to grow the business, improve producivity.</td>
+        			</tr>
+        			<tr>
+          				<th >Hands-On</th>
+          				<th>Collaborative</th>
+          				<th>Ambitious</th>
+        			</tr>
+        			<tr>
+          				<td>I enjoy participating in a lot of areas, to learn more from plant functionality all the way to administrative areas.</td>
+          				<td>I have high regards for team building, I work exceptionally well across all key functional areas indluding plant-workers, administrative and engineering areas.</td>
+          				<td>I'm always looking for opportunities and aren’t afraid to take risks for the sake of making things better.</td>
+        			</tr>
+				</table>
+			</div>
+		</div><!--END WHY ME-->
+	</section>
+<!--CONTACT SECTION -->
+	<section id="contact-section">
 		
 	</section>
-<!--WHY ME-->
-  <div id="why-me-section">
-      <h4 id="title" class="title Title-table">Why Me?</h4>
-      <table id="why-me" width="50%">
-        <tr>
-          <th width="33%">Vision</th>
-          <th width="33%">Problem-solver</th>
-          <th width="33%">Strategic</th>
-        </tr>
-        <tr>
-          <td>I see manufacturing as my passion and by developing new concepts and technology it is possible to monitor and anticipate any potential failure.</td>
-          <td>I believe that everything has a solution, with the correct methodology of simplifying the problem to its core aspect, and solving piece by piece.</td>
-          <td>I think like a business owner and identify opportunities to grow the business, improve producivity.</td>
-        </tr>
-        <tr>
-          <th >Hands-On</th>
-          <th>Collaborative</th>
-          <th>Ambitious</th>
-        </tr>
-        <tr>
-          <td>I enjoy participating in a lot of areas, to learn more from plant functionality all the way to administrative areas.</td>
-          <td>I have high regards for team building, I work exceptionally well across all key functional areas indluding plant-workers, administrative and engineering areas.</td>
-          <td>I'm always looking for opportunities and aren’t afraid to take risks for the sake of making things better.</td>
-        </tr>
-      </table>
-  </div>
-<!-- FOOTER SECTION/CONTACT-->
-	<section id="contact-section">
-		<div id="telephone"><a href="tel:+528117900874">Telephone: +52 81 17900874</a></div>
-		<div id="email"><a href="mailto:alvarez.najera@hotmail.com">Email: alvarez.najera@hotmail.com</a></div>
-	</section>
 <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
+  	<script src="js/jquery-3.1.1.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,155 +1,59 @@
-body {
-	padding-top: 40px;
-	font-size: 14px;
-	word-spacing: 4px;
-	background-color: #ffffff;
-	font-family: 'PT Sans', sans-serif;
+/*GENERAL*/
+h4 {
+	vertical-align: top;
+	text-align: right;
+	padding-right: 10%;
+}
+/*HEADER*/
+.navbar .navbar-nav {
+  	display: inline-block;
+  	float: none;
+  	vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-header a {
+	margin: 10px;
+}
+
+@media (max-width:500px) {
+	.jumbotron {
+		background-image: url(../images/jumbotron_780.jpg);
+		height: 300px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin: 0px;
+		padding:0px;
+		border: 0px;
+	}
+	#about-section p {
+		padding-left: 15%;
+	}	
+}
+@media (min-width: 501px) {
+	.jumbotron {
+		background-image: url(../images/jumbotron_1500.jpg);
+		height: 600px;
+		margin: 0px;
+		padding:0px;
+		border:0px;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 }
 /*ABOUT SECTION*/
 #about-section {
-	background-color: #000000;
-	color: #ffffff;
-	margin-bottom: 0px;
-	padding-bottom: 20px;
+	padding: 30px 0px;
+	border: 0px;
 }
-.about-gen {
-	margin-top: 40px;
+#about-section div {
+	display: inline-block;
 }
-#title-about {
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #999999;
-	text-align: right;
-	padding-right: 75px; 
-}
-#text-about {
-	line-height: 2;
-	padding-left: 10px;
-}
-.icon_about {
-	margin-right: 10px;
-}
-.gen-icon-about {
-	display: inline;
-	line-height: 4;
-	color: #ffffff;
-}
-.gen-icon-about:hover {
-	color: #808080;
-}
-#about-links  {
-	padding-left: 100px;
-}
-#about-links a {
-	text-decoration: none;
-}
-/*END OF ABOUT SECTION*/
-
-/*RESUME SECTION*/
-#resume-section {
-	margin-top: 40px;
-}
-
-/*END RESUME SECTION*/
-
-/*APTITUDES SECTION*/
-
-/*SIZE RESPONSIVE*/
-@media (min-width:1000px) {
-	.jumbotron {
-		margin: 0px;
-		padding: 0px;
-		background-image: url(../images/jumbotron_1500.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		height: 553px
-	}
-}
-@media (min-width: 739px) and (max-width: 999px) {
-		body {
-		font-size: 2.7vw;
-	}
-	.jumbotron {
-		margin: 0px;
-		padding: 0px;
-		background-image: url(../images/jumbotron_780.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		height: 300px
-	}
-	/*navbar section*/
-	.navbar-brand {
-	margin-bottom: 2%;
-	}
-	/*about section*/
-	#title-about {
-	color: #999999;
-	text-align: center;
-	padding: 0px;
-	}
-	#text-about {
-	padding-right: 20px;
-	margin-left: 20px;
-	}
-	#about-links  {
-	text-align: center;
-	padding: 0px;
-	}
-	/*resume section*/
-	#uni-gen {
-		margin-right: 10px;
-	}
-	.location-resume {
-		margin-bottom: 135px;
-	}
-}
-@media (max-width: 738px){
-	body {
-		font-size: 2.7vw;
-	}
-	.jumbotron {
-		margin: 0px;
-		padding: 0px;
-		border: 0px;
-		background-image: url(../images/jumbotron_780.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		height: 300px;
-		width: 100%;
-	}
-	/*navbar section*/
-	#brand {
-		display: inline;
-	}
-	#header-nav {
-		height: 80px;
-	}
-	#nav-list {
-		background-color:black;
-	}
-	 #nav-list a {
- 	font-size: 0.8em;
-	}
-	#nav-list {
-		width: 100%;
-	}
-	/*about section*/
-	#about-section {
-		width:100%;
-	}
-	#title-about {
-		color: #999999;
-		text-align: center;
-		padding: 0px;
-	}
-	#text-about {
-		padding-right: 20px;
-		margin-left: 20px;
-	}
-	#about-links  {
-		text-align: center;
-		padding: 0px;
-	}
-	/*RESUME SECTION*/
-	/*EDUCATION*/
+#about-section a {
+ 	margin-bottom: 10px;
+ }
+/*SKILL SECTION*/
+#ph, #pl, #l, #Prs, #Pes {
+	display: none;
 }
