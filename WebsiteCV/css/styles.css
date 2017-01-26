@@ -48,7 +48,10 @@
 	color: #595959;
 }
 #skills-list a:hover {
-	color: white;
+	color: black;
+}
+#skills-list a:focus {
+	background-color: white;
 }
 /*CONTACT SECTION*/
 #contact-section div {

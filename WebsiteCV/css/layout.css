@@ -54,10 +54,27 @@ h4 {
  	text-align: center;
 	line-height: 50px;
  }
-/*SKILL SECTION*/
-#ph, #pl, #l, #Prs, #Pes {
-	display: none;
-}
+ /*SKILL SECTION*/
+#skills-section {
+	 background-color:#bfbfbf;
+	 padding-bottom:40px;
+ }
+.layout-skills li {
+	 color:black;
+	 list-style-type: none;
+ }
+ .skill-colL {
+ 	text-align: center;
+ }
+  .skill-colR {
+ 	text-align: center;
+ }
+ #title-skills {
+ 	padding-top: 5px;
+ 	padding-left: 120px;
+ 	padding-right: 100%;
+ 	font-weight: bold;
+ }
 /*RESUME SECTION*/
 #resume-section {
 	padding-top: 50px;

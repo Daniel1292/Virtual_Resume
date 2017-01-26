@@ -29,7 +29,7 @@
 				<div class="collapse navbar-collapse" id="collapse-navbar">
       				<ul id="nav-list" class="nav navbar-nav">
       					<li><a href="#about-section"><span class="glyphicon glyphicon-user"></span><br>About</a></li>
-      					<li style="display:none;"><a href="#skills-section"><span class="glyphicon glyphicon-briefcase"></span><br>Skills</a></li>
+      					<li><a href="#skills-section"><span class="glyphicon glyphicon-briefcase"></span><br>Skills</a></li>
    						<li><a href="#resume-section"><span class="glyphicon glyphicon-list-alt"></span><br>Resume</a></li>
    						<li><a href="#contact-section"><span class="glyphicon glyphicon-earphone"></span><br>Contact</a></li>
       				</ul>
@@ -51,43 +51,62 @@
 		</div><!-- .row -->
 	</section><!--#about-section-->
 <!--SKILLS SECTION -->
-	<section id="skills-section" style="display: none;">
+	<section id="skills-section">
 		<nav class="navbar navbar-default">
 			<div id="skills-list" class="container-fluid" style="width: 100%">
+				<div style="display:inline-block">
+					<h4 id="title-skills">SKILLS</h4>
+				</div>
 				<ul class="nav navbar-nav">
-					<li><a href="#">Program Handling </a></li>
-					<li><a href="#">Programming Languages</a></li>
-					<li><a href="#">Languages</a></li>
-					<li><a href="#">Professional Skills</a></li>		
-					<li><a href="#">Personal Skills</a></li>
+					<li id="active"><a href="javascript:toggle_ph();">Program Handling</a></li>
+					<li><a href="javascript:toggle_pl();">Programming Languages</a></li>
+					<li><a href="javascript:toggle_l();">Languages</a></li>
+					<li><a href="javascript:toggle_prs();">Professional Skills</a></li>		
+					<li><a href="javascript:toggle_pes();">Personal Skills</a></li>
 				</ul>
 			</div>
 		</nav>
-		<div id="ph">
-			<ul>
-				<li>Microsoft Word</li>
-				<li>Microsoft Powerpoint</li>
-				<li>Microsoft Excel</li>
-				<li>Microsof Project</li>
-				<li>Solidworks</li>
-				<li>Siemens Nx</li>
-				<li>AutoCAD</li>
-				<li>Proteus</li>
-				<li>LabView</li>
-			</ul>
+		<div id="ph" class="layout-skills">
+			<div class="row">
+				<div class="col-lg-6 skill-colL">
+					<ul>
+						<li>Microsoft Word</li>
+						<li>Microsoft Powerpoint</li>
+						<li>Microsoft Excel</li>
+						<li>Microsof Project</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 skill-colR">
+					<ul>
+						<li>Solidworks</li>
+						<li>Siemens Nx</li>
+						<li>AutoCAD</li>
+						<li>Proteus</li>
+						<li>LabView</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<div id="pl">
-			<ul>
-				<li>Python</li>
-				<li>Java</li>
-				<li>Javascript</li>
-				<li>C</li>
-				<li>C++</li>
-				<li>VBA</li>
-				<li>PLC programming</li>
-			</ul>
+		<div id="pl" class="layout-skills" style="display: none">
+			<div class="row">
+				<div class="col-lg-6 skill-colL">
+					<ul>
+						<li>Python</li>
+						<li>Java</li>
+						<li>Javascript</li>
+					</ul>
+				</div>
+				<div class="col-lg-6 skill-colL">
+					<ul>
+						<li>C</li>
+						<li>C++</li>
+						<li>VBA</li>
+						<li>PLC programming</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-		<div id="l">
+		<div id="l" class="layout-skills skill-colL" style="display: none">
 			<ul>
 				<li>Spanish</li>
 				<li>English (TOEFL 650 pts)</li>
@@ -95,7 +114,7 @@
 				<li>French</li>
 			</ul>
 		</div>
-		<div id="Prs">
+		<div id="Prs" class="layout-skills skill-colL" style="display: none">
 			<ul>
 				<li>Lean Manufacturing</li>
 				<li>Six sigma</li>
@@ -104,7 +123,7 @@
 				<li>Automation design</li>
 			</ul>
 		</div>
-		<div id="Pes">
+		<div id="Pes" class="layout-skills skill-colL" style="display: none">
 			<ul>
 				<li>Able to adapt easily to different situations and environment</li>
 				<li>Organized</li>
