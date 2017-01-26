@@ -51,9 +51,15 @@ h4 {
 	display: inline-block;
 }
 #about-section a {
- 	margin-bottom: 10px;
+ 	text-align: center;
+	line-height: 50px;
  }
 /*SKILL SECTION*/
 #ph, #pl, #l, #Prs, #Pes {
 	display: none;
 }
+/*RESUME SECTION*/
+#resume-section {
+	padding-top: 50px;
+}
+

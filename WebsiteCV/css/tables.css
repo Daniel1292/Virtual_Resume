@@ -5,6 +5,7 @@
 .title-table {
 	vertical-align: top;
 	text-transform: uppercase;
+	text-align:right;
 }
 .subtitle-resume {
 	text-align: left;
@@ -46,9 +47,6 @@
 }
 
 @media (max-width:500px) {
-	#why-me {
-		margin: 0px 25px;
-	}
 	#why-me td, #why-me th {
 		font-size: 2.8vw;
 	}
@@ -57,6 +55,25 @@
 	}
 	.date-table, .subtitle2-resume, #resume-section p {
 		font-size: 2.8vw;
+	}
+	#why-title {
+		display: inline-block;
+		float:left;
+		padding-left: 12%;
+	}
+	#why-me {
+		display: inline-block;
+		margin: 0px 25px;
+	}
+}
+@media (min-width:501px) and (max-width:1200px){
+	#why-title {
+		display: inline-block;
+		float:left;
+		padding-left: 60px;
+	}
+	#why-me {
+		display: inline-block;
 	}
 }
 
